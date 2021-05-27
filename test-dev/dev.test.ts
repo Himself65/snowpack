@@ -94,4 +94,11 @@ describe('snowpack dev', () => {
     const cwd = path.join(__dirname, 'smoke-secure-2');
     await startServer(cwd);
   });
+
+  it('huge-dependencies', async () => {
+    expect.assertions(1);
+
+    const cwd = path.join(__dirname, 'huge-dependencies');
+    await startServer(cwd);
+  });
 });
